@@ -119,7 +119,7 @@ int main(void)
 
 void IRPAIR()
 {
-	IRSENSOR = HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4);
+	IRSENSOR = HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3);
 	if(IRSENSOR == 0)
 	{
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
